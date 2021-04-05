@@ -100,24 +100,19 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: 'Harvard University',
-      logo: require('./assets/images/harvardLogo.png'),
-      subHeader: 'Master of Science in Computer Science',
-      duration: 'September 2017 - April 2019',
-      desc: 'Participated in the research of XXX and published 3 papers.',
-      descBullets: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit'],
-    },
-    {
-      schoolName: 'Stanford University',
-      logo: require('./assets/images/stanfordLogo.png'),
-      subHeader: 'Bachelor of Science in Computer Science',
-      duration: 'September 2013 - April 2017',
-      desc:
-        'Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...',
-      descBullets: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit'],
+      schoolName: 'Algonquin College',
+      logo: require('./assets/images/ac_logo.jpeg'),
+      subHeader: 'Mobile Application Design & Development',
+      duration: 'September 2016 - April 2018',
+      desc: 'Project Lead for development of Algonquin Times Mobile App',
+      descBullets: [
+        'Elected Class Rep',
+        'Graduated with honors',
+        'Mentored fellow students',
+      ],
     },
   ],
 };
@@ -187,40 +182,67 @@ const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: 'jurtdev', // Change to your github username to view your profile in Contact Section.
   showGithubProfile: 'true', // Set true or false to show Contact profile using Github, defaults to true
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: 'Big Projects',
-  subtitle: 'SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH',
+  title: 'Projects',
+  subtitle: "Some personal and/or freelance projects I've enjoyed working on.",
   projects: [
     {
-      image: require('./assets/images/saayaHealthLogo.webp'),
-      projectName: 'Saayahealth',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      image: require('./assets/images/ww_logo.png'),
+      projectName: 'World Watcher',
+      projectDesc:
+        'A web app I created that lets users watch over 150 live web cams from around the world',
       footerLink: [
         {
           name: 'Visit Website',
-          url: 'fa',
+          url: 'http://worldwatcher.herokuapp.com',
         },
         //  you can add extra buttons here.
       ],
     },
     {
-      image: require('./assets/images/nextuLogo.webp'),
-      projectName: 'Nextu',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      image: require('./assets/images/slack.png'),
+      projectName: 'Slack Clone',
+      projectDesc:
+        'I made a clone of the slack app. Users can login, create channels and chat with eachother. Data is stored on Firebase. ',
       footerLink: [
         {
           name: 'Visit Website',
-          url: '',
+          url: 'https://slack-clone-88bf2.firebaseapp.com/',
+        },
+      ],
+    },
+    {
+      image: require('./assets/images/actress.png'),
+      projectName: 'Actress Portfolio Website',
+      projectDesc:
+        "Here is a freelance project I completed. It is a single page website tailored for an actress that showcases her reels, headshots and current projects. Vistors can download her resume and find her agent's contact info.",
+      footerLink: [
+        {
+          name: 'Visit Website',
+          url: 'http://www.carlyfawcett.com',
+        },
+      ],
+    },
+    {
+      image: require('./assets/images/at_app.png'),
+      projectName: 'Algonquin Times App',
+      projectDesc:
+        'I was the project lead, in charge of building mobile app for the Algonquin Times. I led a team of 7 developers and designers. I took the project from the clients imagination and was able to develop a successful product that landed on the app store.',
+      footerLink: [
+        {
+          name: 'Visit Article',
+          url:
+            'https://algonquintimes.com/innovations/become-a-reporter-with-the-algonquin-times-app/',
         },
       ],
     },
   ],
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
